@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JustFone Simple App</title>
+	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+</head>
+<body>
+	<!-- Nav tabs -->
+	<ul class="nav nav-pills" role="tablist">
+		<li role="presentation" class="active"><a href="#addVisitReport" aria-controls="addVisitReport" role="tab" data-toggle="tab">Visit Report</a></li>
+		<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">View All Visit Reports</a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content" style="padding-top: 10px">
+		<div role="tabpanel" class="tab-pane active" id="addVisitReport">
+			<div class="panel panel-default">
+			  <div class="panel-body">
+			    <form>
+			    	<div class="row">
+					  <div class="form-group col-md-4">
+					    <label for="inputUser">User</label>
+					    <input type="text" class="form-control" id="inputUser" placeholder="select user">
+					  </div>
+					  <div class="form-group col-md-4">
+					    <label for="inputVehicle">Vehicle</label>
+					    <input type="text" class="form-control" id="inputVehicle" placeholder="select vehicle">
+					  </div>
+					  <div class="form-group col-md-4">
+					    <label for="inputVehicle">Reason For Journey</label>
+					    <input type="text" class="form-control" id="inputVehicle" placeholder="select reason">
+					  </div>
+				  	</div>
+				  	<div class="row">
+				  		<div class="form-group col-md-6">
+						  	<label for="inputStartDate">Start Date / Time</label>
+						    <div class='input-group date' id='inputStartDate'>
+				                <input type='text' class="form-control" placeholder="now"/>
+				                <span class="input-group-addon">
+				                    <span class="glyphicon glyphicon-calendar"></span>
+				                </span>
+				            </div>
+			            </div>
+					  	<div class="form-group col-md-6">
+						  	<label for="inputEndDate">End Date / Time</label>
+						    <div class='input-group date' id='inputEndDate'>
+				                <input type='text' class="form-control" placeholder="now" />
+				                <span class="input-group-addon">
+				                    <span class="glyphicon glyphicon-calendar"></span>
+				                </span>
+				            </div>
+				        </div>		 
+				  	</div>
+				  	<div class="row">	
+				  		<div class="form-group col-md-6">
+				  			<button type="submit" class="btn btn-default">Submit</button>
+				  		</div>
+				  	</div>
+				</form>
+			  </div>
+			</div>
+		</div>
+		<div role="tabpanel" class="tab-pane" id="profile">...</div>
+	</div>
+
+
+	<script type="text/javascript" src="/bower_components/jquery-2.2.4.min/index.js"></script>
+	<script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+	<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>
